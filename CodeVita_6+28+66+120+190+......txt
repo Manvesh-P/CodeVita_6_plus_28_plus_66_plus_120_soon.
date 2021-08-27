@@ -1,0 +1,16 @@
+# Codevita 6, 28, 66, 120, 190.........pyramid logic.
+
+N = int(input("Enter the width of the pyramid: "))
+
+x = 2
+d = 1
+
+for i in range(1, N+1):
+    for j in range(i, N):
+        print(" ",end='   ')
+    for k in range(1, i+1):
+        print("%.5d"%(x * (x + d)),end='   ')
+        x += 2
+        d += 2
+        
+    print()
